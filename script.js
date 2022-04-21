@@ -55,7 +55,7 @@ function generatePassword() {
   // Check that at least one char type is selected
   if (lowerCase === 'no' && upperCase === 'no' && numericChar === 'no' && specialChar === 'no') {
     window.alert('Error: At least one character type must be selected.');
-    generatePassword();
+    return generatePassword();
   }
 
   // Validate selections (at least one type needs to be chosen)
